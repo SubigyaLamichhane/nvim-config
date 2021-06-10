@@ -1,6 +1,9 @@
 call plug#begin()
 
-set number
+" Required
+Plug 'neovim/nvim-lsp'
+" C++ syntax highlighting plugin
+Plug 'robert-oleynik/clangd-nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
