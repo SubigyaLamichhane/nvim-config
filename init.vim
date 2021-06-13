@@ -25,6 +25,11 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 call plug#end()
 
+" My additions 
+set virtualedit=onemore
+nnoremap $ $l
+autocmd InsertEnter,InsertLeave * set cul!
+
 inoremap jk <ESC>
 nmap <C-n> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
@@ -226,3 +231,6 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+hi Normal guibg=NONE ctermbg=NONE
+set tabstop=2
